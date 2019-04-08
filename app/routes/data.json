@@ -1,0 +1,14 @@
+[
+	{
+		"name" : "素纱襌衣",
+		"price" : "855555",
+		"biaoqian" : "[品类1,品类2,品类3]",
+		"chenfen" : "[标签1,标签2,标签3]",
+		"kuan" : "[aaa,bbb,ccc]",
+		"num" : 3,
+		"zhong" : 52,
+		"color" : "red",
+		"type" : "现货",
+		"time" : "2019-8-20"
+	}
+]
