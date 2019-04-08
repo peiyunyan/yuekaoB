@@ -1,0 +1,53 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+#pull{
+	display: block;
+	width: 100%;
+	height: 2.666rem;
+	background: #0062CC;
+	text-align: center;
+	line-height: 2.666rem;
+	position: absolute;
+	left: 0;
+	bottom: -2.666rem;
+	margin-top: 0.333rem;
+}
+
+.red{
+	background: red;
+}
+.yell{
+	background: yellowgreen;
+}
+
+.wrap{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.top{
+	width: 100%;
+	height: 10rem;
+	/* background: #00B7FF; */
+}
+.scroll{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	/* background: #2AC845; */
+}
+.content{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.list{
+	width: 48%;
+}
+img{
+	width: 100%;
+}

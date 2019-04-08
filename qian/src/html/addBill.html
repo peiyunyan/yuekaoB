@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="../js/libs/mui.min.css">
+	</head>
+	<body>
+		<form class="mui-input-group">
+			<div class="mui-input-row">
+				<input type="text" class="mui-input-clear name" placeholder="请输入商品名称">
+			</div>
+			<div class="mui-input-row">
+				<input type="text" class="mui-input-clear " placeholder="商品图片">
+			</div>
+			<div class="mui-input-row">
+				<input type="text" class="mui-input-clear price" placeholder="价格">
+			</div>
+			<div class="tank">
+				<a href="#popover1" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">选择成分</a>
+				<div id="popover1" class="mui-popover">
+					<ul class="mui-table-view tk">
+						<li class="mui-table-view-cell"><a href="#">成分1</a></li>
+						<li class="mui-table-view-cell"><a href="#">成分2</a></li>
+						<li class="mui-table-view-cell"><a href="#">成分3</a></li>
+					</ul>
+				</div>
+
+				<a href="#popover2" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">选择标签</a>
+				<div id="popover2" class="mui-popover">
+					<ul class="mui-table-view tk">
+						<li class="mui-table-view-cell"><a href="#">标签1</a></li>
+						<li class="mui-table-view-cell"><a href="#">标签2</a></li>
+						<li class="mui-table-view-cell"><a href="#">标签3</a></li>
+					</ul>
+				</div>
+
+				<a href="#popover3" id="openPopover" class="mui-btn mui-btn-primary mui-btn-block">选择宽幅</a>
+				<div id="popover3" class="mui-popover">
+					<ul class="mui-table-view tk">
+						<li class="mui-table-view-cell"><a href="#">宽幅1</a></li>
+						<li class="mui-table-view-cell"><a href="#">宽幅2</a></li>
+						<li class="mui-table-view-cell"><a href="#">宽幅3</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="mui-input-row">
+				<label>数量</label>
+				<input type="text" class="mui-input-clear num" placeholder="请输入用户名">
+			</div>
+			<div class="mui-input-row">
+				<label>克重</label>
+				<input type="text" class="mui-input-clear zhong" placeholder="请输入用户名">
+			</div>
+			<div class="mui-input-row">
+				<label>颜色</label>
+				<input type="text" class="mui-input-clear color" placeholder="请输入用户名">
+			</div>
+			<div class="mui-input-row">
+				<label>备注</label>
+				<input type="text" class="mui-input-clear" placeholder="请输入用户名">
+			</div>
+
+			<ul class="mui-table-view mui-table-view-radio">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">供应</a>
+				</li>
+				<li class="mui-table-view-cell mui-selected">
+					<a class="mui-navigate-right">现货</a>
+				</li>
+			</ul>
+			<div class="mui-button-row">
+				<button type="button" class="mui-btn mui-btn-primary" id="yes">确认</button>
+				<button type="button" class="mui-btn mui-btn-danger">取消</button>
+			</div>
+		</form>
+		<script src="../js/libs/require.js"></script>
+		<script>
+			require(['../js/config'], function() {
+				require(['addBill'])
+			})
+		</script>
+	</body>
+</html>

@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title></title>
-	<link rel="stylesheet" href="js/libs/mui.min.css">
-	<link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-	<div class="wrap">
-		<div class="top">
-			
-		</div>
-		<div class="scroll">
-			<div class="content">
-				<div class="list">
-					
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet" href="js/libs/mui.min.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top">
+				<div class="mui-card">
+					<div class="mui-card-header">智能选花型</div>
+					<div class="mui-card-footer">
+						<button type="button" class="mui-btn mui-btn-blue mui-btn-block">发布求购</button>
+						<button type="button" class="mui-btn mui-btn-blue mui-btn-block" id="addBill">发布商品</button>
+					</div>
 				</div>
-				<div class="list">
-					
+			</div>
+			<div class="scroll">
+				<div class="content">
+					<div class="list" id=0>
+						
+					</div>
+					<div class="list"id=0>
+						
+					</div>
+					<span id="pull">上拉加载</span>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	
-	
-	<script src="js/libs/require.js"></script>
-	<script>
-		require(['js/config'],function() {
-			require(['index'])
-		})
-	</script>
-</body>
+		<script src="js/libs/require.js"></script>
+		<script>
+			require(['js/config'], function() {
+				require(['index'])
+			})
+		</script>
+	</body>
 </html>

@@ -53,7 +53,7 @@ router.post('/api/addList', function(req, res, next) {
 	}
 	console.log(req.body);
 	req.body.time = new Date()
-	console.log(req.body);
+	// console.log(req.body);
 	Mongo.insert('user', 'ybB', req.body, function(result) {
 		if (!result) {
 			res.send({
@@ -67,8 +67,6 @@ router.post('/api/addList', function(req, res, next) {
 			})
 		}
 	})
-
-
 });
 
 

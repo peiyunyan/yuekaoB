@@ -7,8 +7,8 @@ gulp.task('server',function() {
 		port : 8585,
 		open : true,
 		proxies : [
-			{source : 'api/list' , target : "http://localhost:3000/api/list"},
-			{source : 'api/addList' , target : "http://localhost:3000/api/addList"}
+			{source : '/api/list' , target : "http://localhost:3000/api/list"},
+			{source : '/api/addList' , target : "http://localhost:3000/api/addList"}
 		]
 	}))
 })
